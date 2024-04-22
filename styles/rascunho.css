@@ -1,0 +1,43 @@
+
+img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 50px; /* Define a largura máxima da imagem */
+  max-height: 50px; /* Define a altura máxima da imagem */
+  width: auto; /* Permite que a largura se ajuste automaticamente */
+  height: auto; /* Permite que a altura se ajuste automaticamente */
+  left: 100px;
+  top: 30px;
+
+}
+
+
+.menu {
+  position: fixed; /* ou absolute, dependendo do comportamento desejado */
+  top: 30px;
+  right: 100px;
+ 
+}
+
+.menu a {
+  display: inline-block;
+  margin-left: 100px; /* Adiciona um espaço entre as palavras */
+  padding: 5px 10px; /* Adiciona um espaço interno para melhor legibilidade */
+  color:black;
+  text-decoration: none;
+  
+}
+.menu a:hover{
+  color: #000;
+  text-decoration: underline;
+  background-color: #ffffff7e;
+  border-radius: 10px;
+}
+.textos{
+  font-family: 'inter', sans-serif;
+}
+.texto1{
+  margin-left: 100px;
+  margin-top: 150px;
+}

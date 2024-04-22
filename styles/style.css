@@ -1,0 +1,212 @@
+@import "./bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@700&display=swap");
+
+
+.margem {
+  margin: 1rem 5rem;
+  /* background-color:antiquewhite; */
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: end; /* Alinha os itens à direita */
+  margin: 1rem;
+}
+.menu a {
+  color: black;
+  /* background-color: aqua; */
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-left: 5rem;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.textos {
+  margin-top: 7rem;
+  display: grid;
+  gap: 0;
+  font-family: "Inter";
+  /* background-color: antiquewhite; */
+}
+
+.texto1 {
+  line-height: 1.5rem;
+  font-size: 1.8rem;
+}
+.texto1 .complemento {
+  font-weight: 300;
+}
+
+.grid_textImg {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-family: "Inter";
+  font-size: 1rem;
+}
+.grid_textImg img {
+  width: 100%;
+  justify-content: end;
+}
+.textEsquerda span {
+  content: "";
+  background-color: #666;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.projeto {
+  font-family: "Inter";
+  margin-top: 15rem;
+  
+}
+
+.projeto .parag {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.projeto .grid3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+.grid3_1,
+.grid3_2,
+.grid3_3 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.projeto .parag2 {
+  text-align: center; 
+  margin: 0 auto; 
+  width: 2000%; 
+  max-width: 1050px; 
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+
+.graficos {
+  background-color: #474747;
+  border-radius: 3rem;
+  margin: 10rem 5rem;
+  padding: 1rem;
+}
+
+.botoes ul {
+  border-radius: 2rem;
+  background-color: #232323;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.btn-confirma {
+  background: #232323;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  padding: 1.5rem 3.7rem;
+  border-radius: 2rem;
+  place-items: center;
+  text-align: start;
+  transform: 0.2s;
+  flex-wrap: wrap;
+}
+.btn-confirma:focus {
+  background: black;
+}
+
+
+.gridgrafico1 {
+  margin-top: 1.7rem;
+  background-color: #fff; /*gostei da cor nn */
+  border-radius: 3rem;
+}
+.gridgrafico2 {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+}
+.gridgrafico2 img {
+  width: 100%;
+}
+.gridgrafico2 .graph2 {
+  width: 80%;
+}
+.gridgrafico2 .texto3 {
+  display: grid;
+  grid-row: 1fr 1fr;
+  margin: 0 0.5rem;
+}
+
+.gridgrafico2 .texto3 h2 {
+  display: grid;
+  align-items: center;
+}
+.gridgrafico2 .texto3 p {
+  display: grid;
+  align-items: end;
+}
+
+.rodape .teste {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 2rem;
+  
+}
+
+.rodape .teste .centro {
+  margin: 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.rodape h2{
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.membros h6{
+  width: 200%; 
+  max-width: 650px; 
+  font-size: 13px;
+}
+
+.descricao{
+  width: 200%; 
+  max-width: 650px; 
+  font-size: 13px;
+}
+.img_rodape img{
+  width: 9%; 
+  height: auto;
+  margin-left: 25rem; 
+}
+/*@media only screen and (min-width: 768px) {
+}   /*responsividade ???:*/
+
+
+
