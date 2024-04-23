@@ -155,9 +155,7 @@
 .gridgrafico2 img {
   width: 100%;
 }
-.gridgrafico2 .graph2 {
-  width: 80%;
-}
+
 .gridgrafico2 .texto3 {
   display: grid;
   grid-row: 1fr 1fr;
@@ -171,6 +169,7 @@
 .gridgrafico2 .texto3 p {
   display: grid;
   align-items: end;
+  margin-bottom: 3rem;
 }
 
 .rodape .teste {
