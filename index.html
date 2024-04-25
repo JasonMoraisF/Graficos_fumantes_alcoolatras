@@ -16,7 +16,7 @@
   <div class="margem">
     <div class="conteudo">
       <div class="logo">
-        <img class="logo" src="./img/logo1.svg"></img>
+        <img id="logo" class="logo" src="./img/logo1.svg"></img>
       </div>
       <div class="menu">
         <a href="#projeto">Sobre o projeto</a>
@@ -51,22 +51,22 @@
       </div>
       <div class="grid3">
         <div class="grid3_1"> <!-- AQUI vai entrar a parte das 3 colunas explicando o projeto -->
-            <img src="img/img1-pequena.svg" alt="">
-            <p>O problema envolve a previsão de comportamentos de fumo e consumo de álcool com base em dados de sinais corporais.</p>
+          <img src="img/img1-pequena.svg" alt="">
+          <p>O problema envolve a previsão de comportamentos de fumo e consumo de álcool com base em dados de sinais corporais.</p>
         </div>
         <div class="grid3_2">
-            <img src="img/img2-pequena.svg" alt="">
-            <p>Os dados podem abranger uma ampla gama de informações, como níveis de colesterol, triglicerídeos, hemoglobina, além de aspectos fisiológicos como a acuidade visual e auditiva.</p>
+          <img src="img/img2-pequena.svg" alt="">
+          <p>Os dados podem abranger uma ampla gama de informações, como níveis de colesterol, triglicerídeos, hemoglobina, além de aspectos fisiológicos como a acuidade visual e auditiva.</p>
         </div>
         <div class="grid3_3">
-            <img src="img/img3-pequena.svg" alt="">
-            <p>O objetivo é desenvolver um modelo de inteligência artificial capaz de analisar esses dados e prever se uma pessoa é fumante, bebedora ou ambos.</p>
+          <img src="img/img3-pequena.svg" alt="">
+          <p>O objetivo é desenvolver um modelo de inteligência artificial capaz de analisar esses dados e prever se uma pessoa é fumante, bebedora ou ambos.</p>
         </div>
         <div class="parag2">
           <p> Isso pode ter aplicabilidade em várias áreas, desde saúde pública até desenvolvimento de políticas de saúde e intervenções preventivas personalizadas. O desafio reside na coleta e análise eficazes desses dados de sinais corporais, bem como na construção de modelos precisos de previsão com base neles.</p>
         </div>
 
-    
+
       </div><!--gri3-->
     </div><!--projeto-->
 
@@ -74,19 +74,19 @@
       <div class="botoes">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="btn-confirma active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-graphOne" type="button" role="tab" aria-controls="pills-graphOne" aria-selected="true">Gráfico 1</button>
+            <button class="btn-confirma active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-graphOne" type="button" role="tab" aria-controls="pills-graphOne" aria-selected="true">Histograma</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="btn-confirma" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-graphTwo" type="button" role="tab" aria-controls="pills-graphTwo" aria-selected="false">Gráfico 2</button>
+            <button class="btn-confirma" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-graphTwo" type="button" role="tab" aria-controls="pills-graphTwo" aria-selected="false">Mapa de Calor</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="btn-confirma" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-graph3" type="button" role="tab" aria-controls="pills-graph3" aria-selected="false">Gráfico 3</button>
+            <button class="btn-confirma" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-graph3" type="button" role="tab" aria-controls="pills-graph3" aria-selected="false">Scatter Plot</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="btn-confirma" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-graph4" type="button" role="tab" aria-controls="pills-graph4" aria-selected="true">Gráfico 4</button>
+            <button class="btn-confirma" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-graph4" type="button" role="tab" aria-controls="pills-graph4" aria-selected="true">Box Plot</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="btn-confirma" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-graph5" type="button" role="tab" aria-controls="pills-graph5" aria-selected="true">Gráfico 5</button>
+            <button class="btn-confirma" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-graph5" type="button" role="tab" aria-controls="pills-graph5" aria-selected="true">Barra</button>
           </li>
         </ul>
       </div>
@@ -97,9 +97,8 @@
             <div class="gridgrafico2">
               <img src="img/graph1.png" alt="">
               <div class="texto3">
-                <h2>Grafico de analise 1</h2>
-                <p>This dataset is collected from National Health Insurance Service in Korea.
-                  The purpose of this dataset is to Analysis of body signal  and Classification of smoker or drinker.</p>
+                <h2>Gráfico de Análise 1</h2>
+                <p>Examinando o gráfico, é possível notar que o consumo máximo de álcool atinge seu ápice entre as faixas etárias dos 40 e 50 anos.</p>
               </div>
             </div>
           </div>
@@ -109,11 +108,10 @@
         <div class="tab-pane fade" id="pills-graphTwo" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img class="graph2" src="img/graph2.png" alt="">
+              <img src="img/graph5.png" alt="">
               <div class="texto3">
-                <h2>Grafico de analise 2</h2>
-                <p>This dataset is collected from National Health Insurance Service in Korea.
-                  The purpose of this dataset is to Analysis of body signal  and Classification of smoker or drinker.</p>
+                <h2>Gráfico de Análise 2</h2>
+                <p>Neste gráfico, investigamos as correlações entre variáveis como sexo, idade, peso, colesterol total, consumo de álcool e tabagismo.</p>
               </div>
             </div>
           </div>
@@ -123,11 +121,10 @@
         <div class="tab-pane fade" id="pills-graph3" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="img/graph3.png" alt="">
+              <img src="img/graph4.png" alt="">
               <div class="texto3">
-                <h2>Grafico de analise 3</h2>
-                <p>This dataset is collected from National Health Insurance Service in Korea.
-                  The purpose of this dataset is to Analysis of body signal  and Classification of smoker or drinker.</p>
+                <h2>Gráfico de Análise 3</h2>
+                <p>Ao analisar o gráfico, é evidente que a maioria das pessoas apresenta níveis de colesterol dentro de uma faixa considerada saudável. No entanto, uma pequena porcentagem da amostra exibe níveis elevados de colesterol.</p>
               </div>
             </div>
           </div>
@@ -137,11 +134,10 @@
         <div class="tab-pane fade" id="pills-graph4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="img/graph4.png" alt="">
+              <img src="img/graph6.png" alt="">
               <div class="texto3">
-                <h2>Grafico de analise 4</h2>
-                <p>This dataset is collected from National Health Insurance Service in Korea.
-                  The purpose of this dataset is to Analysis of body signal  and Classification of smoker or drinker.</p>
+                <h2>Gráfico de Análise 4</h2>
+                <p>A partir deste gráfico, podemos observar que 25% dos participantes estão na faixa etária entre 30 e 40 anos. A mediana das idades está situada entre 40 e 50 anos, calculada em 45 anos. Além disso, 75% dos valores de idade são iguais ou inferiores a 60 anos.</p>
               </div>
             </div>
           </div>
@@ -151,11 +147,10 @@
         <div class="tab-pane fade" id="pills-graph5" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="img/graph1.png" alt="">
+              <img src="img/graph3.png" alt="">
               <div class="texto3">
-                <h2>Grafico de analise 5</h2>
-                <p>This dataset is collected from National Health Insurance Service in Korea.
-                  The purpose of this dataset is to Analysis of body signal  and Classification of smoker or drinker.</p>
+                <h2>Gráfico de Análise 5</h2>
+                <p>A partir deste gráfico, é perceptível que há mais consumidores de álcool do que fumantes.</p>
               </div>
             </div>
           </div>
@@ -164,10 +159,10 @@
       </div> <!--div final do bootstrap-->
     </div><!--grafico-->
 
-    
+
   </div><!-- fim margem -->
-  
-  <div class="rodape" id ="nos">
+
+  <div class="rodape" id="nos">
     <div class="teste">
       <div class="centro">
         <div class="membros">
@@ -176,16 +171,16 @@
           <h6>Keitty Carla</h6>
           <h6>Cécilia Cássia</h6>
           <h6>Jason de Morais</h6>
-        </div>  
-      <div class="descricao">
-        <h2>DESCRIÇÃO</h2>
-        <p><b>© 2024 Grupo de Alunos da Universidade Tiradentes de Pernambuco | Projeto de Inteligência Artificial</b>
-          
-          Somos um grupo de alunos da Universidade Tiradentes de Pernambuco, focados em aplicar inteligência artificial em pesquisas práticas. Nosso projeto atual analisa dados sobre fumantes e alcoólatras. Desenvolvemos este site para compartilhar nossas descobertas. Obrigado por visitar.</p>
-      </div>
-      <div class="img_rodape">
-        <img src="img/logo1.svg" alt="">
-      </div>
+        </div>
+        <div class="descricao">
+          <h2>DESCRIÇÃO</h2>
+          <p><b>© 2024 Grupo de Alunos da Universidade Tiradentes de Pernambuco | Projeto de Inteligência Artificial</b>
+
+            Somos um grupo de alunos da Universidade Tiradentes de Pernambuco, focados em aplicar inteligência artificial em pesquisas práticas. Nosso projeto atual analisa dados sobre fumantes e alcoólatras. Desenvolvemos este site para compartilhar nossas descobertas. Obrigado por visitar.</p>
+        </div>
+        <div class="img_rodape">
+          <a href="#logo"><img src="img/logo1.svg" alt=""></a>
+        </div>
 
       </div>
     </div>
