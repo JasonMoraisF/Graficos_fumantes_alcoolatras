@@ -10,16 +10,17 @@
   display: grid;
   grid-template-columns: 25% 75%;
   position: fixed;
+  padding-left: 9em;
   /* display: flex; */
   right: 10;
   top: 0;
-  margin: -10em;
+  margin: -1em -10em;
   width: 100%;
   /* margin-right: 1rem; */
   margin-top: 1rem;
   z-index: 999;
   
-  background-color: #ffffff60;
+  background-color: #ffffff90;
 }
 
 .logo img {
