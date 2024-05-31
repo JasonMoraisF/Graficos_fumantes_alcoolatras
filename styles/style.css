@@ -3,38 +3,65 @@
 
 
 .margem {
-  margin: 1rem 5rem;
+  margin: 1rem 10rem;
   /* background-color:antiquewhite; */
 }
 .conteudo {
   display: grid;
   grid-template-columns: 25% 75%;
+  position: fixed;
+  /* display: flex; */
+  right: 10;
+  top: 0;
+  width: 100%;
+  /* margin-right: 1rem; */
+  margin-top: 1rem;
+  z-index: 999;
+  
 }
 
 .logo img {
   width: 4rem;
+
+
 }
 
 .menu {
+  position: fixed;
   display: flex;
+  right: 0;
+  top: 0;
+  width: 100%;
   justify-content: end; /* Alinha os itens à direita */
-  margin: 1rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  z-index: 999;
 }
 .menu a {
   color: black;
   /* background-color: aqua; */
   padding: 0.5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black; 
+  background: white;
   margin-left: 5rem;
   align-items: center;
   font-size: 1rem;
   font-family: "Inter";
   font-weight: 500;
+  transition: background-color 0.3s ease; /* Transição suave quando o mouse passa */
+  
+}
+.menu a:hover {
+  color: white;
+  border: white;
+  background-color: #F28E13; /* Muda a cor de fundo ao passar o mouse */
 }
 
 .textos {
   margin-top: 7rem;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0;
   font-family: "Inter";
   /* background-color: antiquewhite; */
@@ -50,9 +77,10 @@
 
 .grid_textImg {
   display: grid;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
   font-family: "Inter";
   font-size: 1rem;
+  justify-items: right;
 }
 .grid_textImg img {
   width: 100%;
@@ -71,8 +99,7 @@
 
 .projeto {
   font-family: "Inter";
-  margin-top: 15rem;
-  
+  margin-top: 5rem;
 }
 
 .projeto .parag {
@@ -204,8 +231,75 @@
   height: auto;
   margin-left: 25rem; 
 }
-/*@media only screen and (min-width: 768px) {
-}   /*responsividade ???:*/
 
+.form{
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+#div1{
+
+}
+
+/* Responsividade */
+@media only screen and (max-width: 868px) {
+  .margem {
+    margin: 1.5rem 3rem;
+  }
+
+  .conteudo {
+    grid-template-columns: 25% 75%;
+  }
+
+  .texto1 .complemento {
+    font-size: 1.6rem;
+  }
+  .grid_textImg .textEsquerda {
+    margin-top: 1rem;
+  }
+  .logo img {
+    width: 3.2rem;
+  }
+  .menu {
+    gap: 2px;
+  }
+
+  .menu a {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .textos {
+    margin-top: 3rem;
+  }
+
+  .projeto {
+    margin-top: 10rem;
+  }
+
+  .projeto .parag {
+    display: flex;
+  }
+
+  .grid3_1,
+  .grid3_2,
+  .grid3_3 {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .projeto .parag2 {
+    margin: 3rem 0;
+  }
+
+  .rodape .teste .centro{
+    margin: 0 1rem;
+  }
+  
+  .img_rodape img {
+    width: 3rem;
+}
+
+}
 
