@@ -65,6 +65,7 @@
   gap: 0;
   font-family: "Inter";
   /* background-color: antiquewhite; */
+  justify-items: start;
 }
 
 .texto1 {
@@ -233,10 +234,35 @@
 }
 
 .form{
-  background-color: red;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-direction: column;
+
 }
+
+.col-auto a{
+  border: #F28E13;
+  background-color: #F28E13;
+
+}
+.col-auto a:hover{
+  border: #232323;
+  background-color: #232323;
+}
+
+.input{
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+}
+.input div input, .radio{
+  margin-top: 0.8em;
+}
+.form p, h1{
+  text-align: center;
+}
+
 
 #div1{
 
