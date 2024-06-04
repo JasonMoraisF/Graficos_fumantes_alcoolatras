@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='resposta_style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+  <title>Resultado do formulário</title>
+</head>
+
+<body>
+  <div class="margem">
+    <div class="conteudo">
+      <div class="logo">
+        <a href="{{ url_for('index') }}"><img id="logo" class="logo" src="{{ url_for('static', filename='/image/Vector.svg')}}"></img></a>
+      </div>
+      <div class="menu">
+        <a href="#projeto">Sobre o projeto</a>
+        <a href="#graficos">Gráficos</a>
+        <a href="#nos">Sobre o nós</a>
+      </div>
+    </div>
+    <div class="seta">
+      <!--<a href="javascript:history.back()">    trocar o link para o link da tua pagina ceci-->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='/image/seta.svg')}}" alt="Voltar" ></a>
+      </a>
+    </div>
+    <div class="rsp_texto1">
+      <div class="rsp_titulo">
+        <h1><b>Você é {{resultado}}</b></h1>
+      </div>
+      <div class="grid_textimg">
+        <div class="img_grafico">
+          <h3 class="text_grafico">Gráfico com números de fumantes e alcoólatras no Brasil:</h3>
+          <img src="{{ url_for('static', filename='/image/grafico.jpg')}}" alt="Gráfico">
+        </div>
+        <div class="rsp_textos">
+          <div class="rsp_texto2">
+            <ul>
+              <li class="titulo_list"><b>O que acontece se você parar de fumar:</b>
+                <ul class="sublist">
+                  <li>20 minutos: pressão sanguínea e pulsação normalizam;
+                  <li>2 horas, não há mais nicotina na circulação sanguínea;
+                  <li>8 horas, o nível de oxigênio no sangue é normalizado;
+                  <li>12 a 24 horas, os pulmões já funcionam melhor;
+                  <li>2 dias, já se percebe melhora no olfato e paladar;
+                  <li>3 semanas, a respiração e a circulação melhoram;
+                  <li>1 ano, o risco de morte por infarto do miocárdio é reduzido à metade;
+                  <li>10 anos, o risco de sofrer infarto será igual ao das pessoas que nunca fumaram.
+                </ul>
+            </ul>
+          </div>
+          <div class="rsp_text3">
+            <ul>
+              <li class="titulo_list"><b>Principais fatos sobre os efeitos do alcóol</b>
+                <ul class="sublist">
+                  <li> Em todo o mundo, 3 milhões de mortes por ano resultam do uso nocivo do álcool, representando 5,3% de todas as mortes.</li>
+                  <li>O uso nocivo de álcool é um fator causal para mais de 200 doenças e lesões.
+                    Em geral, 5,1% da carga mundial de doenças e lesões são atribuídas ao consumo de álcool, conforme calculado em termos de Anos de Vida Perdidos Ajustados por Incapacidade (DALY, sigla em inglês).</li>
+                  <li>O consumo de álcool causa morte e incapacidade relativamente cedo na vida. Na faixa etária de 20 a 39 anos, aproximadamente 13,5% do total de mortes são atribuíveis ao álcool.</li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
