@@ -175,7 +175,7 @@
       <form class="input" action="/pagina-processa-dados-do-form" method="post">
         <div>
           <div class="radio" id="div1">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="genero" required>
               <option selected>Selecione seu genero</option>
               <option value="0">Feminino</option>
               <option value="1">Masculino</option>
@@ -183,73 +183,73 @@
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Idade</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade">
+            <input type="password" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Peso</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso">
+            <input type="password" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Cintura</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura">
+            <input type="password" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Colesterol Total</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Colesterol Total"
-              placeholder="Colesterol Total">
+            <input type="password" class="form-control" id="inputPassword2" name="Colesterol_Total"
+              placeholder="Colesterol Total" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS">
+            <input type="password" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAD</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD">
+            <input type="password" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">BLDS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS">
+            <input type="password" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS" required>
           </div>
         </div>
         <div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">HDL Colesterol</label>
-            <input type="password" class="form-control" id="inputPassword2" name="HDL Colesterol"
-              placeholder="HDL Colesterol">
+            <input type="password" class="form-control" id="inputPassword2" name="HDL_colesterol"
+              placeholder="HDL Colesterol" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Triglicerídeo</label>
             <input type="password" class="form-control" id="inputPassword2" name="Triglicerídeo"
-              placeholder="Triglicerídeo">
+              placeholder="Triglicerídeo" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Hemoglobina<label>
-            <input type="password" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina">
+            <input type="password" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Proteina da urina</label>
             <input type="password" class="form-control" id="inputPassword2" name="Proteina_da_urina"
-              placeholder="Proteina da urina">
+              placeholder="Proteina da urina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Soro creatinina</label>
             <input type="password" class="form-control" id="inputPassword2" name="soro_creatinina"
-              placeholder="Soro creatinina">
+              placeholder="Soro creatinina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT AST</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST">
+            <input type="password" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT ALT</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT">
+            <input type="password" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Gamma GTP</label>
-            <input type="password" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP">
+            <input type="password" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP" required>
           </div>
           <div class="radio">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="Tabagismo" required>
               <option selected>Você fuma?</option>
               <option value="0.0">Nunca fumei</option>
               <option value="0.5">Já fumei, porém não fumo mais</option>
@@ -260,7 +260,7 @@
         </div>
       </form>
       <div class="col-auto">
-        <a href="{{ url_for('predict') }}" type="submit" class="btn btn-primary mb-3">Confirmar</a>
+        <a href="{{ url_for('respostaPag') }}" type="submit" class="btn btn-primary mb-3">Confirmar</a>
       </div>
 
     </div>
