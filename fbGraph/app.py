@@ -61,8 +61,8 @@ def predict():
         resultado = 'Você é alcóolatra'
 
 
-    #return render_template('resposta_index.html',resultado=resultado)
-    return f'Seu resultado é "{resultado}"'
+    return render_template('resposta_index.html',resultado=resultado)
+    #return f'Seu resultado é "{resultado}"'
 
 
 if __name__ == '__main__':
