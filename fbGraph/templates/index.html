@@ -183,70 +183,70 @@
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Idade</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade" required>
+            <input type="number" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade" required>
           </div>
           <div class="col-auto" id="div1">
-            <label for="inputPassword2" class="visually-hidden">Peso</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso" required>
+            <label for="inputPassword2" class="visually-hidden" >Peso</label>
+            <input type="number" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Cintura</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura" required>
+            <input type="number" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Colesterol Total</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Colesterol_Total"
+            <input type="number" class="form-control" id="inputPassword2" name="Colesterol_Total"
               placeholder="Colesterol Total" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS" required>
+            <input type="number" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAD</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD" required>
+            <input type="number" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">BLDS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS" required>
+            <input type="number" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS" required>
           </div>
         </div>
         <div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">HDL Colesterol</label>
-            <input type="password" class="form-control" id="inputPassword2" name="HDL_colesterol"
+            <input type="number" class="form-control" id="inputPassword2" name="HDL_colesterol"
               placeholder="HDL Colesterol" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Triglicerídeo</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Triglicerídeo"
+            <input type="number" class="form-control" id="inputPassword2" name="Triglicerídeo"
               placeholder="Triglicerídeo" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Hemoglobina<label>
-            <input type="password" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina" required>
+            <input type="number" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Proteina da urina</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Proteina_da_urina"
+            <input type="number" class="form-control" id="inputPassword2" name="Proteina_da_urina"
               placeholder="Proteina da urina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Soro creatinina</label>
-            <input type="password" class="form-control" id="inputPassword2" name="soro_creatinina"
+            <input type="number" class="form-control" id="inputPassword2" name="soro_creatinina"
               placeholder="Soro creatinina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT AST</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST" required>
+            <input type="number" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT ALT</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT" required>
+            <input type="number" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Gamma GTP</label>
-            <input type="password" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP" required>
+            <input type="number" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP" required>
           </div>
           <div class="radio">
             <select class="form-select" aria-label="Default select example" name="Tabagismo" required>
@@ -296,10 +296,10 @@
 
 
 
-  <script src="./jquery-3.3.1.slim.min.js"></script>
-  <script src="./popper.min.js"></script>
-  <script src="./bootstrap.min.js"></script>
-  <script src="./bootstrap.js"></script>
+  <script src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.css')}}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+  <script src=".{{ url_for('static', filename='popper.min.js')}}"></script>
 </body>
 
 </html>
