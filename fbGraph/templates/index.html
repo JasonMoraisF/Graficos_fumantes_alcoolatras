@@ -160,7 +160,7 @@
         <p> Aqui, oferecemos um formulário simples e rápido que utiliza uma Inteligencia Artificial, para prever se você é fumante, alcoólatra, ou ambos, com base em algumas perguntas sobre seus dados corporais. Nossa ferramenta utiliza uma base de dados da Coreia do Sul para fornecer uma estimativa. <br> Responda ao questionário e descubra!</br></p>
       </div>
 
-      <form class="input" action="predict" method="post">
+      <form class="input" action="predict" method="POST">
         <div>
           <div class="radio" id="div1">
             <select class="form-select" aria-label="Default select example" name="genero" required>
@@ -205,7 +205,7 @@
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Triglicerídeo</label>
-            <input type="number" class="form-control" id="inputPassword2" name="Triglicerídeo" placeholder="Triglicerídeo" required>
+            <input type="number" class="form-control" id="inputPassword2" name="Trigliceridio" placeholder="Trigliceridio" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Hemoglobina</label>
@@ -234,14 +234,14 @@
           <div class="radio">
             <select class="form-select" aria-label="Default select example" name="Tabagismo" required>
               <option selected>Você fuma?</option>
-              <option value="0.0">Nunca fumei</option>
-              <option value="0.5">Já fumei, porém não fumo mais</option>
-              <option value="1.0">Sim, fumo.</option>
+              <option value="1">Nunca fumei</option>
+              <option value="2">Já fumei, porém não fumo mais</option>
+              <option value="3">Sim, fumo.</option>
             </select>
           </div>
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-3" value= "predict" >Confirmar</button>
+          <input type="submit" value="predict">
         </div>
       </form>
     </div>

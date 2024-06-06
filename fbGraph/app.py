@@ -5,11 +5,16 @@ from flask import Flask, render_template, request
 
 filterwarnings('ignore')
 
-# resultado = 0.0
+resultado = 0.0
 
-def import_model():  # abre o modelo treinado
-    modelo = pickle.load(open('modelo.sav', 'rb'))
-    return modelo
+def import_model():
+    try:
+        with open('fbGraph/modelo.pkl', 'rb') as file:
+            modelo = pickle.load(file)
+        return modelo
+    except Exception as e:
+        print(f"Erro ao carregar o modelo: {e}")
+        return None
 
 
 modelo = import_model()
@@ -30,7 +35,7 @@ def index():
 def predict():
      
     parametros = [float(request.form['genero']),
-        float(request.form['Idade']), 
+    float(request.form['Idade']), 
     float(request.form['Peso']), 
     float(request.form['Cintura']), 
     float(request.form['Colesterol_Total']), 
@@ -38,14 +43,15 @@ def predict():
     float(request.form['PAD']),
     float(request.form['BLDS']), 
     float(request.form['HDL_colesterol']), 
-    float(request.form['Triglicerídio']), 
+    float(request.form['Trigliceridio']), 
     float(request.form['Hemoglobina']), 
     float(request.form['Proteina_da_urina']),
     float(request.form['soro_creatinina']), 
     float(request.form['SGOT_AST']), 
     float(request.form['SGOT_ALT']), 
     float(request.form['gamma_GTP']), 
-    float(request.form['Voce fuma'])]
+    float(request.form['Tabagismo'])]
+    print(request.form)
     
     resultado = modelo.predict([ parametros ])[0]
     
