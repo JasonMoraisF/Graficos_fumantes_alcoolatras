@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='resposta_style.css')}}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/resposta_style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/style.css')}}">
 
   <title>Resultado do formulário</title>
 </head>
@@ -15,7 +15,7 @@
   <div class="margem">
     <div class="conteudo">
       <div class="logo">
-        <a href="{{ url_for('index') }}"><img id="logo" class="logo" src="{{ url_for('static', filename='/image/Vector.svg')}}"></img></a>
+        <a href="{{ url_for('index') }}"><img id="logo" class="logo" src="{{ url_for('static', filename='image/Vector.svg')}}"></img></a>
       </div>
       <div class="menu">
         <a href="#projeto">Sobre o projeto</a>

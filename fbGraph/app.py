@@ -3,9 +3,12 @@ from warnings import filterwarnings
 import pickle
 from flask import Flask, render_template, request
 
+filterwarnings('ignore')
+
+# resultado = 0.0
 
 def import_model():  # abre o modelo treinado
-    modelo = pickle.load(open('./fbGraph/modelo.sav', 'rb'))
+    modelo = pickle.load(open('modelo.sav', 'rb'))
     return modelo
 
 
@@ -18,9 +21,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/resposta_index',methods=['GET']) #importando o template
-def respostaPag():
-    return render_template('resposta_index.html')
+# @app.route('/resposta_index',methods=['GET']) #importando o template
+# def respostaPag():
+#     # mandar o resultado
+#     return render_template('resposta_index.html')
 
 @app.route('/predict',methods=['POST']) #mandando seus dados
 def predict():
@@ -51,8 +55,12 @@ def predict():
         resultado = 'Você é alcóolatra'
 
 
-    return render_template('resposta_index.html', resultado=resultado)
+    #return render_template('resposta_index.html',resultado=resultado)
+    return f'Seu resultado é "{resultado}"'
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(
+        debug=True,
+        port=5000
+    )
