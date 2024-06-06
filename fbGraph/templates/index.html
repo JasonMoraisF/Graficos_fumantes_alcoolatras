@@ -7,9 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 
-
-
-
   <title>Conjunto de Dados sobre Fumo e Bebida com Sinais Corporais</title>
 </head>
 
@@ -17,7 +14,7 @@
   <div class="margem">
     <div class="conteudo">
       <div class="logo">
-        <img id="logo" class="logo" src="{{ url_for('static', filename='/image/Vector.svg')}}"></img>
+        <img id="logo" class="logo" src="{{ url_for('static', filename='image/Vector.svg')}}">
       </div>
       <div class="menu">
         <a href="#projeto">Sobre o projeto</a>
@@ -25,7 +22,6 @@
         <a href="#nos">Sobre o nós</a>
       </div>
     </div>
-
 
     <div class="textos">
       <div class="texto1">
@@ -35,34 +31,30 @@
         <h1 class="complemento">Base de dados (Coreia do Sul)</h1>
       </div>
       <div class="grid_textImg">
-        <img src="{{ url_for('static', filename='/image/nuvem.svg')}}"></img>
+        <img src="{{ url_for('static', filename='image/nuvem.svg')}}">
       </div>
     </div>
     <!-- textos -->
 
     <div class="projeto" id="projeto">
-
       <div class="grid3">
-        <div class="grid3_1"> <!-- AQUI vai entrar a parte das 3 colunas explicando o projeto -->
-          <img src="{{ url_for('static', filename='/image/img1-pequena.svg')}}" alt="">
+        <div class="grid3_1">
+          <img src="{{ url_for('static', filename='image/img1-pequena.svg')}}" alt="">
           <p>O problema envolve a previsão de comportamentos de fumo e consumo de álcool com base em dados de sinais
             corporais que foram coletados do Serviço Nacional de Seguro Saúde da Coreia do Sul.</p>
         </div>
         <div class="grid3_2">
-          <img src="{{ url_for('static', filename='/image/img2-pequena.svg')}}" alt="">
+          <img src="{{ url_for('static', filename='image/img2-pequena.svg')}}" alt="">
           <p>Os dados podem abranger uma ampla gama de informações, como níveis de colesterol, triglicerídeos,
             hemoglobina, além de aspectos fisiológicos como a acuidade visual e auditiva.</p>
         </div>
         <div class="grid3_3">
-          <img src="{{ url_for('static', filename='/image/img3-pequena.svg')}}" alt="">
+          <img src="{{ url_for('static', filename='image/img3-pequena.svg')}}" alt="">
           <p>O objetivo é desenvolver um modelo de inteligência artificial capaz de analisar esses dados e prever se uma
             pessoa é fumante, se bebe ou ambos.</p>
         </div>
-
-
-
-      </div><!--gri3-->
-    </div><!--projeto-->
+      </div><!-- grid3 -->
+    </div><!-- projeto -->
 
     <div class="graficos" id="graficos">
       <div class="botoes">
@@ -96,7 +88,7 @@
           tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="{{ url_for('static', filename='/image/graph1.png')}}" alt="">
+              <img src="{{ url_for('static', filename='image/graph1.png')}}" alt="">
               <div class="texto3">
                 <h2>Gráfico de Análise 1</h2>
                 <p>Examinando o gráfico, é possível notar que o consumo máximo de álcool atinge seu ápice entre as
@@ -106,11 +98,10 @@
           </div>
         </div>
 
-
         <div class="tab-pane fade" id="pills-graphTwo" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="{{ url_for('static', filename='/image/graph5.png')}}" alt="">
+              <img src="{{ url_for('static', filename='image/graph5.png')}}" alt="">
               <div class="texto3">
                 <h2>Gráfico de Análise 2</h2>
                 <p>Neste gráfico, investigamos as correlações entre variáveis como sexo, idade, peso, colesterol total,
@@ -120,11 +111,10 @@
           </div>
         </div>
 
-
-        <div class="tab-pane fade" id="pills-graph3" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="tab-pane fade" id="pills-graph3" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="{{ url_for('static', filename='/image/graph4.png')}}" alt="">
+              <img src="{{ url_for('static', filename='image/graph4.png')}}" alt="">
               <div class="texto3">
                 <h2>Gráfico de Análise 3</h2>
                 <p>Ao analisar o gráfico, é evidente que a maioria das pessoas apresenta níveis de colesterol dentro de
@@ -135,11 +125,10 @@
           </div>
         </div>
 
-
-        <div class="tab-pane fade" id="pills-graph4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="tab-pane fade" id="pills-graph4" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="{{ url_for('static', filename='/image/graph6.png')}}" alt="">
+              <img src="{{ url_for('static', filename='image/graph6.png')}}" alt="">
               <div class="texto3">
                 <h2>Gráfico de Análise 4</h2>
                 <p>A partir deste gráfico, podemos observar que 25% dos participantes estão na faixa etária entre 30 e
@@ -150,11 +139,10 @@
           </div>
         </div>
 
-
-        <div class="tab-pane fade" id="pills-graph5" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="tab-pane fade" id="pills-graph5" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
           <div class="gridgrafico1">
             <div class="gridgrafico2">
-              <img src="{{ url_for('static', filename='/image/graph3.png')}}" alt="">
+              <img src="{{ url_for('static', filename='image/graph3.png')}}" alt="">
               <div class="texto3">
                 <h2>Gráfico de Análise 5</h2>
                 <p>A partir deste gráfico, é perceptível que há mais consumidores de álcool do que fumantes.</p>
@@ -163,19 +151,19 @@
           </div>
         </div>
 
-      </div> <!--div final do bootstrap-->
-    </div><!--grafico-->
+      </div> <!-- tab-content -->
+    </div><!-- graficos -->
 
     <div class="form">
       <div class="tituloform">
         <h1>Formulario</h1>
-        <p> Aqui, oferecemos um formulário simples e rápido que utiliza uma Inteligencia Artificial, para prever se você é fumante, alcoólatra, ou ambos, com base em algumas perguntas sobre seus dados corporais.  Nossa ferramenta utiliza uma base de dados da Coreia do Sul para fornecer uma estimativa. <br> Responda ao questionário e descubra!</br></p>
+        <p> Aqui, oferecemos um formulário simples e rápido que utiliza uma Inteligencia Artificial, para prever se você é fumante, alcoólatra, ou ambos, com base em algumas perguntas sobre seus dados corporais. Nossa ferramenta utiliza uma base de dados da Coreia do Sul para fornecer uma estimativa. <br> Responda ao questionário e descubra!</br></p>
       </div>
 
-      <form class="input" action="/pagina-processa-dados-do-form" method="post">
+      <form class="input" action="predict" method="POST">
         <div>
           <div class="radio" id="div1">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="genero" required>
               <option selected>Selecione seu genero</option>
               <option value="0">Feminino</option>
               <option value="1">Masculino</option>
@@ -183,88 +171,81 @@
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Idade</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade">
+            <input type="number" class="form-control" id="inputPassword2" name="Idade" placeholder="Idade" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Peso</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso">
+            <input type="number" class="form-control" id="inputPassword2" name="Peso" placeholder="Peso" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Cintura</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura">
+            <input type="number" class="form-control" id="inputPassword2" name="Cintura" placeholder="Cintura" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">Colesterol Total</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Colesterol Total"
-              placeholder="Colesterol Total">
+            <input type="number" class="form-control" id="inputPassword2" name="Colesterol_Total" placeholder="Colesterol Total" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS">
+            <input type="number" class="form-control" id="inputPassword2" name="PAS" placeholder="PAS" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">PAD</label>
-            <input type="password" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD">
+            <input type="number" class="form-control" id="inputPassword2" name="PAD" placeholder="PAD" required>
           </div>
           <div class="col-auto" id="div1">
             <label for="inputPassword2" class="visually-hidden">BLDS</label>
-            <input type="password" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS">
+            <input type="number" class="form-control" id="inputPassword2" name="BLDS" placeholder="BLDS" required>
+          </div>
+          <div class="col-auto">
+            <input type="submit" value="Confirmar" class="btn btn-primary mb-3">
           </div>
         </div>
         <div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">HDL Colesterol</label>
-            <input type="password" class="form-control" id="inputPassword2" name="HDL Colesterol"
-              placeholder="HDL Colesterol">
+            <input type="number" class="form-control" id="inputPassword2" name="HDL_colesterol" placeholder="HDL Colesterol" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Triglicerídeo</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Triglicerídeo"
-              placeholder="Triglicerídeo">
+            <input type="number" class="form-control" id="inputPassword2" name="Trigliceridio" placeholder="Trigliceridio" required>
           </div>
           <div class="col-auto" id="div2">
-            <label for="inputPassword2" class="visually-hidden">Hemoglobina<label>
-            <input type="password" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina">
+            <label for="inputPassword2" class="visually-hidden">Hemoglobina</label>
+            <input type="number" class="form-control" id="inputPassword2" name="Hemoglobina" placeholder="Hemoglobina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Proteina da urina</label>
-            <input type="password" class="form-control" id="inputPassword2" name="Proteina_da_urina"
-              placeholder="Proteina da urina">
+            <input type="number" class="form-control" id="inputPassword2" name="Proteina_da_urina" placeholder="Proteina da urina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Soro creatinina</label>
-            <input type="password" class="form-control" id="inputPassword2" name="soro_creatinina"
-              placeholder="Soro creatinina">
+            <input type="number" class="form-control" id="inputPassword2" name="soro_creatinina" placeholder="Soro creatinina" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT AST</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST">
+            <input type="number" class="form-control" id="inputPassword2" name="SGOT_AST" placeholder="SGOT AST" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">SGOT ALT</label>
-            <input type="password" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT">
+            <input type="number" class="form-control" id="inputPassword2" name="SGOT_ALT" placeholder="SGOT ALT" required>
           </div>
           <div class="col-auto" id="div2">
             <label for="inputPassword2" class="visually-hidden">Gamma GTP</label>
-            <input type="password" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP">
+            <input type="number" class="form-control" id="inputPassword2" name="gamma_GTP" placeholder="Gamma GTP" required>
           </div>
           <div class="radio">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="Tabagismo" required>
               <option selected>Você fuma?</option>
-              <option value="0.0">Nunca fumei</option>
-              <option value="0.5">Já fumei, porém não fumo mais</option>
-              <option value="1.0">Sim, fumo.</option>
-
+              <option value="1">Nunca fumei</option>
+              <option value="2">Já fumei, porém não fumo mais</option>
+              <option value="3">Sim, fumo.</option>
             </select>
           </div>
+          
         </div>
       </form>
-      <div class="col-auto">
-        <a href="{{ url_for('predict') }}" type="submit" class="btn btn-primary mb-3">Confirmar</a>
-      </div>
-
     </div>
-
 
   </div><!-- fim margem -->
 
@@ -281,25 +262,21 @@
         <div class="descricao">
           <h2>DESCRIÇÃO</h2>
           <p><b>© 2024 Grupo de Alunos da Universidade Tiradentes de Pernambuco | Projeto de Inteligência Artificial</b>
-
             Somos um grupo de alunos da Universidade Tiradentes de Pernambuco, focados em aplicar inteligência
             artificial em pesquisas práticas. Nosso projeto atual analisa dados sobre fumantes e alcoólatras.
             Desenvolvemos este site para compartilhar nossas descobertas. Obrigado por visitar.</p>
         </div>
         <div class="img_rodape">
-          <a href="#logo"><img src="{{ url_for('static', filename='/image/Vector.svg')}}" alt=""></a>
+          <a href="#logo"><img src="{{ url_for('static', filename='image/Vector.svg')}}" alt=""></a>
         </div>
-
       </div>
     </div>
   </div>
 
-
-
-  <script src="./jquery-3.3.1.slim.min.js"></script>
-  <script src="./popper.min.js"></script>
-  <script src="./bootstrap.min.js"></script>
-  <script src="./bootstrap.js"></script>
+  <script src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.js')}}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='popper.min.js')}}"></script>
 </body>
 
 </html>
