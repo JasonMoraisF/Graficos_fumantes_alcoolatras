@@ -9,7 +9,7 @@ resultado = 0.0
 
 def import_model():
     try:
-        with open('fbGraph/modelo.pkl', 'rb') as file:
+        with open('modelo.pkl', 'rb') as file:
             modelo = pickle.load(file)
         return modelo
     except Exception as e:
